@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 40px 24px;
+}
+.food_form{
+  margin-top: 18px;
+}
+.input_1{
+  padding: 6px 16px;
+  min-width: 200px;
+  max-height: 100vh;
+}
+.button_1{
+  padding: 6px 16px;
+  font-size: 15px;
+  margin-left: 6px;
+  background-color:hsl(201, 100%, 50%);
+  border: 2px solid hsl(201, 100%, 50%);
+  border-radius: 4px;
+  color:white;
+  cursor: pointer;
+}
+.button_1:hover{
+  background-color: hsl(236, 100%, 50%);
 }
 
-.App-link {
-  color: #61dafb;
+.app_recipes{
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 230px 230px;
+  align-items: baseline;
+}
+.app_healthLabels{
+  padding: 5px 7px;
+  margin-left: 6px;
+  border-radius: 4px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
